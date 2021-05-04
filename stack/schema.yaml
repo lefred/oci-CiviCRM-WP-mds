@@ -1,6 +1,6 @@
 title: "CiviCRM with WordPress on OCI with MDS"
 description: "CiviCRM with WordPress on OCI with MySQL Database Service"
-schemaVersion: 1.0.0
+schemaVersion: 1.0.1
 version: "20210420"
 locale: "en"
 

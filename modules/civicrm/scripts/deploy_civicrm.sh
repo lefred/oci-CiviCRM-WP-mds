@@ -17,6 +17,8 @@ chown -R apache civicrm
 
 chcon -R --type httpd_sys_rw_content_t /var/www/html/wp-content/plugins/civicrm
 
+/usr/sbin/setsebool httpd_can_network_connect 1
+
 sed -i '/memory_limit = 128M/c\memory_limit = 256M' /etc/httpd/conf/httpd.conf
 sed -i '/max_execution_time = 30/c\max_execution_time = 240' /etc/httpd/conf/httpd.conf
 sed -i '/max_input_time = 60/c\max_input_time = 120' /etc/httpd/conf/httpd.conf
